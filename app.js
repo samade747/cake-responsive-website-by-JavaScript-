@@ -1,26 +1,27 @@
 let carddisplay = [
-    { id: '01',
-      cardtitle: 'Try on Coach styles for free',
-      cardtext: 'shop Coach with prime Try before you buy',
-      image: "./images/cardSection-bag1.jpg"
+    { id: '766',
+      cardtitle: 'Engagement cake',
+      cardtext: 'Engagement cake',
+      image: "./images/cake-1.jpg"
+      
     }, 
         
-    { id: '02',
-      cardtitle: 'Explore sports gifts for kids',
-      cardtext: 'shop-kids sports with free 2-day shipping',
-      image: "./images/cardSection-bag2.jpg"
+    { id: '367',
+      cardtitle: 'Rosette Cake',
+      cardtext: 'cake with rose',
+      image: "./images/cake2.jpeg"
     },
 
     { id: '03',
-      cardtitle: 'Top Deal',
-      cardtext: 'College Apparel from Merch on Demand',
-      image: "./images/cardSection-bag3.jpg"
+      cardtitle: 'Nikah cake designs',
+      cardtext: 'Nikah cake designs',
+      image: "./images/cake3.jpg"
     },
 
     { id: '09',
     cardtitle: '',
     cardtext: '',
-    image: "./images/cardSection-bag7.jpg"
+    image: "./images/cake4.jpg"
     },
 
 
@@ -85,8 +86,8 @@ function carddisplayshow() {
         // cardElement.classList.add('class', 'w-75');
 
         cardElement.innerHTML = `
-            <div class="card  shadow-lg p-2 mb-2 bg-body-tertiary">
-                <div class="card-body ">
+            <div class="card   p-2 mb-2 ">
+                <div class=" ">
                     <h5 class="card-title">${cardData.cardtitle}</h5>
                     <img src="${cardData.image}" class="card-img-bottom " alt="${cardData.cardtitle}">
                 </div>

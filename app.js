@@ -26,30 +26,30 @@ let carddisplay = [
 
 
 
-    { id: '04',
-    cardtitle: 'Gifts for adventurers',
-    cardtext: 'Explore sports and outdoor gifts',
-    image: "./images/cardSection-bag4.jpg"
-    },
+    // { id: '04',
+    // cardtitle: 'Gifts for adventurers',
+    // cardtext: 'Explore sports and outdoor gifts',
+    // image: "./images/cardSection-bag4.jpg"
+    // },
 
 
-    { id: '05',
-    cardtitle: 'New fall styles under $50',
-    cardtext: 'See women New Arrivals Under $50',
-    image: "./images/cardSection-bag5.jpg"
-    },
+    // { id: '05',
+    // cardtitle: 'New fall styles under $50',
+    // cardtext: 'See women New Arrivals Under $50',
+    // image: "./images/cardSection-bag5.jpg"
+    // },
 
-    { id: '06',
-    cardtitle: 'A lighter way to hydrate by Stanley',
-    cardtext: 'shop the early lunch',
-    image: "./images/cardSection-bag6.jpg"
-    },
+    // { id: '06',
+    // cardtitle: 'A lighter way to hydrate by Stanley',
+    // cardtext: 'shop the early lunch',
+    // image: "./images/cardSection-bag6.jpg"
+    // },
 
-    { id: '08',
-    cardtitle: 'Gifts for her and more',
-    cardtext: 'Explore the Fashion Gift Guide',
-    image: "./images/cardSection-bag8.jpg"
-    },
+    // { id: '08',
+    // cardtitle: 'Gifts for her and more',
+    // cardtext: 'Explore the Fashion Gift Guide',
+    // image: "./images/cardSection-bag8.jpg"
+    // },
 ];
 
 

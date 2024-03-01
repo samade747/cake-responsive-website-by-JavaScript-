@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- first nav Bar strat -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logorestamzon.png" alt="amazon" width="100px">
+            
+            </a>
+            <div class="h-lg-100 d-inline-flex align-items-center py-3 me-4 text-white ">
+                <small class="fa fa-map-marker-alt text-primary me-3"></small>
+                <small>Deliver to, <br> Washington USA</small>
+            </div>
+
+            <form class="d-flex col-lg-6 col" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign in Account & lists</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Return & Orders</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cart
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- first Nav Bar End  -->
+
+
+      <!-- 2nd nav bar  -->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <li class="nav-item dropdown hidding">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        
+
+
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Holiday Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Medical Care</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Groceries</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Best Sellers</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Amazon Basics</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Prime</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Releases</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registry</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Today's Deals</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help Center</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Music</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Books</a>
+              </li>
+
+
+              <!-- <li class="nav-item">
+                <a class="nav-link" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+<!-- 2nd navbar end  -->
+
+<!-- image slider start -->
+
+<div id="carouselExampleIndicators" class="carousel slide position-absolute">
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div> -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/imageslider1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/imageslider2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/imageslider3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/imageslider4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/imageslider5.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/imageslider6.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/imageslider7.jpg" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- image slider end  -->
+
+
+  <!-- card Section
+  <div class="cardSection container cardimage"></div> -->
+
+  <div class="container-fluid cardimage" >
+    <div class="row cardSection">
+        <!-- <div class="col-4 ">
+            <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+                <div class="card-body ">
+                  <h5 class="card-title" id="card1">Card title</h5>                             
+                <img src="./images/cardSection-bag1.jpg" id="cardimage1" class="card-img-bottom " alt="bag1"  >
+              </div>
+              <p class="card-text" id="cardtext1">This is a wider card </p>
+            </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+              <div class="card-body ">
+                <h5 class="card-title" id="card1">Card title</h5>                             
+              <img src="./images/cardSection-bag1.jpg" id="cardimage1" class="card-img-bottom " alt="bag1"  >
+            </div>
+            <p class="card-text" id="cardtext1">This is a wider card </p>
+          </div>
+      </div> -->
+    </div>
+  </div> 
+
+
+    <!-- Best Seller in Books  -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="card shadow p-1 mb-2 bg-body-tertiary">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner d-flex shadow-lg p-1 mb-2 bg-body-tertiary gap-5">
+        <div class="carousel-item active d-flex"></div>
+        <img src="./images/books-1.jpg" class="" alt="...">       
+        <img src="./images/books-2.jpg" class="" alt="...">
+        <img src="./images/books-3.jpg" class=" " alt="...">
+        <img src="./images/books-4.jpg" class=" " alt="...">
+        <img src="./images/books-5.jpg" class=" " alt="...">
+        <img src="./images/books-6.jpg" class=" " alt="...">
+        <img src="./images/books-7.jpg" class=" " alt="...">
+        <img src="./images/books-8.jpg" class=" " alt="...">
+        <img src="./images/books-9.jpg" class=" " alt="...">              
+        </div>
+      </div>
+      </div> 
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- Trending deals  -->
+
+<div class="container-fluid d-flex" >
+  <div class="row">
+    <div class="col-12" >
+      <h3>Trending deals</h3>
+    </div>
+  <div class="col">
+      <div class="card shadow p-2 mb-2 bg-body-tertiary ">
+            <div class="card-body">
+              <h5 class="card-title" id=""></h5>                             
+              <img src="./images/Trdeing1.jpg" id="" class="card-img-bottom " alt="bag1"  >
+            </div>
+                <p class="card-text" id="">100% Mulberry Silk Pillowcase </p>
+            </div>
+      </div>
+  
+
+      <div class="col">
+        <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+            <div class="card-body ">
+              <h5 class="card-title" id=""></h5>                             
+              <img src="./images/Trdeing2.jpg" id="" class="card-img-bottom " alt="bag1"  >
+            </div>
+                <p class="card-text" id="">100% Mulberry Silk Pillowcase </p>
+            </div>
+         </div>
+
+         <div class="col">
+          <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+              <div class="card-body ">
+                <h5 class="card-title" id=""></h5>                             
+                <img src="./images/books-10.jpg" id="" class="card-img-bottom " alt="bag1"  >
+              </div>
+                  <p class="card-text" id="">Gritin 16 LED Rechargeable Book Light </p>
+              </div>
+           </div>
+
+           <div class="col">
+          <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+              <div class="card-body ">
+                <h5 class="card-title" id=""></h5>                             
+                <img src="./images/Trending3.jpg" id="" class="card-img-bottom " alt="bag1"  >
+              </div>
+                  <p class="card-text" id="">Gritin 16 LED Rechargeable Book Light </p>
+              </div>
+           </div>
+
+           <div class="col">
+            <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+                <div class="card-body ">
+                  <h5 class="card-title" id=""></h5>                             
+                  <img src="./images/Trending4.jpg" id="" class="card-img-bottom " alt="bag1"  >
+                </div>
+                    <p class="card-text" id="">AUTOMET women sweetshirt</p>
+                </div>
+             </div>
+
+             <div class="col">
+              <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+                  <div class="card-body ">
+                    <h5 class="card-title" id=""></h5>                             
+                    <img src="./images/Trending5.jpg" id="" class="card-img-bottom " alt="bag1"  >
+                  </div>
+                      <p class="card-text" id="">Samsonite Aspire 2-Piece Luggage Sets</p>
+                  </div>
+               </div>
+               <div class="col">
+                <div class="card shadow-lg p-2 mb-2 bg-body-tertiary ">
+                    <div class="card-body ">
+                      <h5 class="card-title" id=""></h5>                             
+                      <img src="./images/Trending6.jpg" id="" class="card-img-bottom " alt="bag1"  >
+                    </div>
+                        <p class="card-text" id="">ANRABESS women 2023 </p>
+                    </div>
+                 </div>
+  
+  
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

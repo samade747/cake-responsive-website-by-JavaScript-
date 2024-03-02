@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamabad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid" id="firstContainer">
+            <div class="row" id="navbarRow">
+                <div class="col" id="navbar">
+                    <div class="col" id="userBar">
+                    <img id="logoPandahey" src="./Assets/logo.PNG" alt="" width="150px">
+                    
+                    </div>
+                    <div class="locationBar">
+                        <input class="form-control me-2" style="outline: none; border: none;" type="search" placeholder="Search" aria-label="Search" id="foodSearchBar">
+                         <button class="btn btn-outline-success" id="foodSearchBtn" onclick="foodSearchHandler()">Search</button>
+                        <!-- <i class="fa-solid fa-location-dot"></i>
+                        <p>Location <span>Islamabad</span></p> -->
+                    </div>
+                    <div class="row" >
+                        <div class="col" id="inputAndDrop">
+                            <button type="button" class="btn " id="logIn">Log in</button>
+                            <button type="button" class="btn signUp">Sign Up</button>
+                            <div class="dropdown " id="dropDown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-globe"></i>
+                                  EN
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><button class="dropdown-item " type="button">English</button></li>
+                                </ul>
+                            </div>
+                            <i id="shoppingIcon" class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid" id="pandaAndDesc">
+            <div class="row d-flex align-items-center justify-content-between flex-row" id="pandaAndInput">
+                <div class="col" id="locationBar">
+                    <h1>Food and groceries delivery from وفاقی دارالحکومت اسلام آباد’s best restaurants and shops</h1>
+                   
+                </div>
+                
+                <div class="col">
+                    <img id="imgPanda" src="./Assets/panda.PNG" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- HomePage link -->
+        <div class="homepage">
+            <ul>
+                <li><a href="../Home/index.html" style="color:#D70F64 ;">Homepage </a><span>></span> </li>
+                <li id="countryName">Islamabad</li>
+            </ul>
+        </div>
+        <!-- restaurent items -->
+        <div class="container" id="menuItems">
+            
+        </div>
+    </main>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

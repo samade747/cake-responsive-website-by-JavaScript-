@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbarRow {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#logIn {
+    background-color: none;
+    border: 1px solid #D70F64;
+    color: #D70F64;
+    margin-right: 20px;
+}
+
+.signUp {
+    background-color: #D70F64;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#inputAndDrop {
+    display: flex;
+    align-items: center;
+}
+#firstContainer{
+    position: fixed;
+    padding-left: 100px;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(123, 119, 119, 0.29);
+
+}
+#pandaAndDesc{
+    padding-top: 80px;
+}
+#dropDown {
+    margin-right: 20px;
+}
+
+#shoppingIcon {
+    color: #D70F64;
+
+}
+
+#imgPanda {
+    width: 614px;
+}
+
+#locationBar {
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+}
+
+.locationBar {
+    display: flex;
+    align-items: center;
+    margin-right: 230px;
+    height: 35px;
+    padding: 8px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+/* .locationBar:hover {
+    background-color: #ede0e6;
+} */
+
+.locationBar p {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.locationBar p span {
+    color: #D70F64;
+    font-weight: 500;
+}
+
+/* main  */
+#pandaAndDesc {
+    display: flex;
+    background-color: rgb(242, 248, 248);
+}
+
+/* homepage */
+.homepage{
+    margin-left: 40px;
+}
+.homepage ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #D70F64;
+}
+.homepage ul li span {
+    margin-left: 10px;
+    color: grey;
+}
+#countryName {
+    color: black;
+}
+#items{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#items img{
+    transition: transform 0.3s;
+    
+
+}
+#items:hover img{
+    transform: scale(1.1);
+}
+#menuItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.food-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+#foodSearchBar{
+    box-shadow: none !important;
+    border:1px solid #D70F64 !important;
+    color: #D70F64 !important;
+
+}
+#foodSearchBtn{
+    border:1px solid #D70F64 !important;
+    color: #D70F64 !important;
+}
+#foodSearchBtn:hover{
+    background-color: #D70F64 !important;
+    color: #fff !important;
+}
+@media (max-width: 1050px) {
+    #imgPanda {
+        width: 500px;
+    }
+}
+@media (max-width: 822px){
+
+}
+@media (max-width: 810px) {
+    #imgPanda {
+        width: 400px;
+    }
+
+    #locationBar h1 {
+        font-size: 35px;
+    }
+    #logIn {
+        display: none;
+    }
+
+    .signUp {
+        display: none !important;
+    }
+
+    #dropDown {
+        display: none;
+    }
+    #navbar{
+        padding: 0;
+    }
+    .locationBar{
+        margin-right: 130px;
+     }
+}
+
+@media (max-width: 690px) {
+    #imgPanda {
+        width: 350px;
+    }
+
+    #locationBar h1 {
+        font-size: 25px;
+    }
+
+    
+}
+
+@media (max-width: 620px) {
+    #imgPanda {
+        width: 350px;
+    }
+
+    #locationBar h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 580px) {
+    #pandaAndDesc {
+        display: flex;
+    }
+    .locationBar{
+       margin-right: 100px;
+    }
+    #imgPanda {
+        width: 250px;
+    }
+
+    #locationBar h1 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 530px) {
+    #pandaAndDesc {
+        display: flex;
+    }
+    .locationBar{
+       margin-right: 100px;
+    }
+    #imgPanda {
+        width: 230px;
+    }
+
+    #locationBar h1 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 430px) {
+    #pandaAndDesc {
+        display: flex;
+    }
+    .locationBar{
+       margin-right: 50px;
+    }
+    #imgPanda {
+        width: 230px;
+    }
+
+    #locationBar h1 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 370px) {
+    #pandaAndDesc {
+        display: flex;
+    }
+    .locationBar{
+       margin-right: 50px;
+    }
+    #imgPanda {
+        width: 230px;
+    }
+
+    #locationBar h1 {
+        font-size: 10px;
+    }
+}

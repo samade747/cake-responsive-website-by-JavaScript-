@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodpanda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="container" id="firstContainer">
+        <div class="row" id="navbarRow">
+            <div class="col" id="navbar">
+                <div class="col mt-2" id="userBar">
+                    <i class="fa-regular fa-user" style="font-size: 40px;"></i>
+                
+                <img id="logoPandahey" src="./Assets/logo.PNG" alt="" width="150px">
+                </div>
+                <div class="row" >
+                    <div class="col" id="inputAndDrop">
+                        <button type="button" class="btn " id="logIn" data-bs-toggle="modal" data-bs-target="#exampleModal2">Log in</button>
+                        <button type="button" class="btn signUp" data-bs-toggle="modal" data-bs-target="#exampleModal" id="homeSignUp">Sign Up</button>
+                        <div class="btn-group" id="dropDownSignUp"></div>
+                        <div class="dropdown " id="dropDown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-globe"></i>
+                              EN
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item " type="button">English</button></li>
+                            </ul>
+                        </div>
+                        <i id="shoppingIcon" class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  
+  <!-- Modal SignUp-->
+  <div class="modal fade signUpModal" id="exampleModal" style="width: 300px;" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <label for="">Email</label>
+           <input class="form-control me-2" type="search" placeholder="Enter your email" id="email" aria-label="Search">
+           <label for="">Password</label>
+           <input class="form-control me-2" type="search" placeholder="Enter your password" id="password" aria-label="Search">
+           <button type="button" class="btn logInBtn" style="width: 100%; margin-top: 10px;">Log in</button>
+           <button type="button" class="btn signUpBTn" style="width: 100%; margin-top: 10px;" onclick="signUpHandler()">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal 2 LogIn wala-->
+   <div class="modal fade signUpModal" id="exampleModal2" style="width: 300px;" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <label for="">Email</label>
+           <input class="form-control me-2" type="search" placeholder="Enter your email" id="email2" aria-label="Search">
+           <label for="">Password</label>
+           <input class="form-control me-2" type="search" placeholder="Enter your password" id="password2" aria-label="Search">
+           <button type="button" class="btn logInBtn" style="width: 100%; margin-top: 10px;" onclick="logInHandler()">Log in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <main>
+        <div class="container-fluid" id="pandaAndDesc">
+            <div class="row d-flex flex-row" id="pandaAndInput">
+                <div class="col" id="para1">
+                    <h1>It's the food and groceries you love, delivered</h1>
+                </div>
+                <div class="col-md-6 col-sm-6 " id="locationBar">
+                    <h1>It's the food and groceries you love, delivered</h1>
+                    <div class="inputList">
+                      <div class="input-group mb-3" id="locationAndInputBar">
+                        <input type="text" class="inputForm"  placeholder="Your street and street number" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button id="locationBtn" type="button"><i class="fa-solid fa-location-crosshairs" style="padding-right: 10px;"></i>Locate me</button>
+                      </div>
+                       <button class="btn mb-3 col-sm-6"  type="button" id="button-addon3">Find food</button>
+                    </div>
+                </div>
+                
+                <div class="col" style="overflow: hidden;">
+                    <img id="imgPanda" src="./Assets/panda.PNG" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="myContainerOfInput">
+            <div class="row align-items-center m-2 col-sm-8" style="display: flex; flex-direction: column; align-items: center;">
+                <div class="col ">
+                    <div class="input-group mb-3" id="inputBarHey">
+                        <input type="text" class="form-control" placeholder="Your street and street number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2" style="color: #D70F64;"><i class="fa-solid fa-location-crosshairs" style="padding-right: 10px; "></i>Locate me</span>
+                      </div>
+                </div>
+                
+                <div class="col">
+                    <button class="btn"  type="button" id="button-addon3">Find food</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container-fluid" id="cookingMan">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>You prepare the food, we handle the rest</h1>
+                </div>
+                <div class="col m-0" id="manImg">
+                        <div class="col-sm-5 col-md-5  p-3" id="popUp">
+                            <h5>List your restaurant or shop on foodpanda</h5>
+                            <p class="mt-4">Would you like millions of new customers to enjoy your amazing food and groceries? So would we!</p>
+                            <p class="mt-4">It's simple: we list your menu and product lists online, help you process orders, pick them up, and deliver them to hungry pandas – in a heartbeat!</p>
+                            <p class="mt-5">Interested? Let's start our partnership today!</p>
+                            <button type="button" class="btn signUp" id="getStart">Get started</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col" id="pic1">
+                     
+                </div>
+                <div class="col" id="pic2">
+
+                </div>
+                <div class="col" id="pic3">
+
+                </div>
+                <div class="col" id="pic4">
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="imgContain">
+            <h3>Find us in these cities and many more!</h3>
+            <div class="row m-2" id="citiesNameParent">
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-1" ><button id="btn">Islamabad</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-2" ><button id="btn">Karachi</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-3" ><button id="btn">Lahore</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-4" ><button id="btn">Faisalabad</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-5" ><button id="btn">Rawalpindi</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-6" ><button id="btn">Abbotabad</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-7" ><button id="btn">Bahawalpur</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-8" ><button id="btn">Dera Ghazi Khan</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2 places" id="placeImg-9" ><button id="btn">Gujranwala</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-10" ><button id="btn">Gujrat</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-11"><button id="btn">Hyderabad</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-12"><button id="btn">Jhelum</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-13"><button id="btn">Kamoke</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-14"><button id="btn">Larkana</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-15"><button id="btn">Mangla</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-16"><button id="btn">Mardan</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-17"><button id="btn">Multan</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-18"><button id="btn">Murree</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-19"><button id="btn">Okara</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-20"><button id="btn">Pano Aqil</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-21"><button id="btn">Peshawar</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-22"><button id="btn">Quetta</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-23"><button id="btn">Rahim Yar Khan</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-24"><button id="btn">Sadiqabad</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-25"><button id="btn">Sahiwal</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-26"><button id="btn">Sargodha</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-27"><button id="btn">Sheikhupura</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-28"><button id="btn">Sialkot</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-29"><button id="btn">Sukkur</button></div>
+                <div class="col-lg-3 col-md-4 col-sm-6 m-2" id="placeImg-30"><button id="btn">Wah Cannt</button></div>
+            </div>
+        </div>
+        <div class="container-fluid" >
+            <h2 class="p-3 ">Put us in your pocket</h2>
+            <div class="row m-2 align-items-start" id="rowOfLogo" style="color: #fff; ">
+                <div class="col-lg-6 col-md-12" id="scannerAndlogo">
+                    <p class=" mt-5 " style="font-size: 22px;">Download the food and groceries you love</p>
+                            <div class=" col" style="display: flex; align-items: center;">
+                                <img id="scannerId" src="./Assets/scanner.PNG" alt="" width="100px">
+                                <p>It's all at your fingertips – the restaurants and shops you love. Find the right food and groceries to suit your mood, and make the first bite last. Go ahead, download us.</p>
+                            </div>
+                            <div class=" flex-column mb-5 mt-4">
+                            <img src="./Assets/1.PNG" alt="" width="120px">
+                            <img src="./Assets/2.PNG" alt="" width="120px">
+                            <img src="./Assets/3.PNG" alt="" width="120px">
+                            </div>
+                </div>
+                <div class="col-lg-6 col-md-12" id="mobilePhone">
+                    <img id="mobilePic" src="./Assets/home-foodpanda-apps.webp" alt="" width="550px">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col" id="officePic">
+                    <div class="card">
+                        <div class="card-body p-4">
+                          <h5 class="card-title">foodpanda for business</h5>
+                          <p class="card-text pt-3" >Order lunch or fuel for work-from-home, late nights in the office, corporate events, client meetings, and much more.</p>
+                          <button type="button" class="btn btn-danger mt-2 mb-2">Get started</button>
+                        </div>
+                      </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container paragraphContainer p-4">
+            <div class="row ">
+                <h1>Order food and groceries online from the best restaurants and shops on foodpanda</h1>
+                <div class="col paragraph1">
+                  <p>Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office or looking to avoid the weekly shop? Then foodpanda Pakistan is the right destination for you! foodpanda offers you a long and detailed list of the best restaurants and shops near you to help make your every day easier.</p>
+                </div>
+            </div>
+            <div class="row " id="paraAboutPandaRow">
+                <h1>What's new?</h1>
+                <div class="col paragraph2">
+                    <p><span>✓</span> Wide variety of restaurants and shops, an abundance of cuisines & products.</p>
+                    <p><span>✓</span> High quality delivery service.</p>
+                    <p><span>✓</span> Live chat feature to give App users instant help when they need it.</p>
+                    <p id="questionPara"><span>✓</span> NEW: foodpanda grocery delivery! Discover the best shops, pharmacies, bakeries and more near you.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h3>Frequently Asked Questions</h3>
+                <h5>How can I get foodpanda delivery?</h5>
+                <div class="col paragraph3">
+                    <p>To get foodpanda delivery, simply locate the restaurants and shops near you by typing in your address, browse through a variety of restaurants and cuisines, check menus and prices, choose your dishes and add them to the basket. Now you only need to checkout and make the payment. Soon your delicious food will arrive at your doorstep!</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>Which takeout restaurants open now near me?</h5>
+                <div class="col paragraph3">
+                    <p>You can check which takeout restaurants are open now near you by simply typing your address in the location bar on foodpanda and pressing search. You will see all the available restaurants and shops that deliver to your area.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>Does foodpanda deliver 24 hours?</h5>
+                <div class="col paragraph3">
+                    <p>Yes, foodpanda in Pakistan delivers 24 hours. However, many restaurants may be unavailable for a late-night delivery. Please check which places in Pakistan deliver to you within 24 hours by using your address. You can also order groceries 24 hours a day via pandamart.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>Can you pay cash for foodpanda?</h5>
+                <div class="col paragraph3">
+                    <p>Yes, you can pay cash on delivery for foodpanda in Pakistan.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>How can I pay foodpanda online?</h5>
+                <div class="col paragraph3">
+                    <p>You can pay online while ordering at foodpanda Pakistan by using a credit or debit card or PayPal.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>Can I order foodpanda for someone else?</h5>
+                <div class="col paragraph3">
+                    <p>Yes, foodpanda Pakistan allows you to place an order for someone else. During checkout, just update the name and delivery address of the person you're ordering for. Please keep in mind that if the delivery details are not correct and the order cannot be delivered, we won't be able to process a refund.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>How much does foodpanda charge for delivery?</h5>
+                <div class="col paragraph3">
+                    <p>Delivery fee charged by foodpanda in Pakistan depends on many operational factors, most of all - location and the restaurant you are ordering from. You can always check the delivery fee while forming your order. Besides, you can filter the restaurants by clicking on the "Free Delivery" icon at the top of your restaurant listing.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>What restaurants let you order online?</h5>
+                <div class="col paragraph3">
+                    <p>There are hundreds of restaurants on foodpanda Pakistan that let you order online. For example,<span>KFC</span>, <span>McDonald's</span>, <span>Pizza Hut</span>,<span>OPTP</span>,<span>Hardee's</span>,<span>Domino's</span>, <span>Kababjees</span> and many-many more! In order to check all the restaurants near you that deliver, just type in your address and discover all the available places.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>Does foodpanda have minimum order?</h5>
+                <div class="col paragraph3">
+                    <p>Yes, many restaurants have a minimum order. The minimum order value depends on the restaurant you order from and is indicated during your ordering process.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow2">
+                <h5>What is the difference between delivery and Pick-Up?</h5>
+                <div class="col paragraph3">
+                    <p>If you choose delivery, a foodpanda rider will collect your order from the restaurant and take it to your chosen delivery address. If you choose Pick-Up, you can takeaway your food directly from the restaurant for extra savings – and to jump to the front of the queue. Pick-Up orders are available for restaurants only.</p>
+                </div>
+            </div>
+            <div class="row" id="paraAboutPandaRow3">
+                <h6>Order food and groceries online with foodpanda now and enjoy a great dining experience!</h6>
+            </div>
+            <div class="row align-items-center" id="logoFaceAndInsta">
+                <div class="col">
+                  <img src="./Assets/logoDark.PNG" alt="" width="180px">
+                </div>
+                <div class="col" id="faceAndInsta">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="row" id="pandaInformation">
+                <div class="col-md-3">
+                    <p>© 2023 foodpanda</p>
+                </div>
+                <div class="col-md-3" style="line-height: 27px;" id="pandaLinkWeb">
+                    <p><span>Press</span> <span>Help Center</span> <span> Refunds with pandapay</span> <span>Pandapay User Account Terms and Conditions</span> <span>Terms and conditions </span><span> Privacy policy</span> <span>Security</span> <span>Download foodpanda Apps</span> <span>Human rights policy</span></p>
+                </div>
+                <div class="col-md-3" style="line-height: 27px;" id="pandaLinkWeb">
+                    <p><span>Careers</span> <span>Suggest a restaurant</span> <span>Corporate Customer</span> <span>Cashback Terms and Conditions</span> <span>All cuisines</span> <span>foodpanda Magazine</span> <span>Partner with us</span> <span></span> <span>pandago- Request a rider</span> <span>foodpanda Vouchers&Promo</span></p>
+                </div>
+                <div class="col-md-3" style="line-height: 27px;" id="pandaLinkWeb">
+                    <p><span>All cities</span> <span>Update on COVID-19 in Pakistan</span> <span>pandamart Grocery Delivery</span> <span>pandapro - monthly subscription programme</span> <span>foodpanda home chef</span> <span>Become an affiliate</span> <span>Ramzan deals</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="app.js" ></script>   
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>

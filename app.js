@@ -148,20 +148,20 @@ places.forEach((place) => {
 
     if (e.currentTarget.innerText === 'Islamabad') {
 
-      window.location.href = '../Islamabad/index.html';
+      window.location.replace = '../Islamabad/index.html';
     } else if (e.currentTarget.innerText === 'Karachi') {
 
-      window.location.href = '../Karachi/index.html';
+      window.location.replace = '../Karachi/index.html';
     }
   });
 });
 
 
 function khi() {  
-  window.location.href = "../Karachi/index.html";
+  window.location.replace = "../Karachi/index.html";
 }
 
 
 function isl() {  
-  window.location.href = "../Islamabad/index.html";
+  window.location.replace = "../Islamabad/index.html";
 }

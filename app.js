@@ -146,10 +146,10 @@ const places = document.querySelectorAll('.places');
 places.forEach((place) => {
   place.addEventListener('click', function (e) {
 
-    if (e.currentTarget.innerText == 'Islamabad') {
+    if (e.currentTarget.innerText === 'Islamabad') {
 
       window.location.replace = '../Islamabad/index.html';
-    } else if (e.currentTarget.innerText == 'Karachi') {
+    } else if (e.currentTarget.innerText === 'Karachi') {
 
       window.location.replace = '../Karachi/index.html';
     }
@@ -157,11 +157,11 @@ places.forEach((place) => {
 });
 
 
-function khi() {  
-  window.location.replace = "../Karachi/index.html";
-}
+// function khi() {  
+//   window.location.replace = "../Karachi/index.html";
+// }
 
 
-function isl() {  
-  window.location.replace = "../Islamabad/index.html";
-}
+// function isl() {  
+//   window.location.replace = "../Islamabad/index.html";
+// }

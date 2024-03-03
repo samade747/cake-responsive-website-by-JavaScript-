@@ -140,45 +140,45 @@
 //   })
 // })
 
-// const places = document.querySelectorAll('.places');
-// console.log(places.length);
+const places = document.querySelectorAll('.places');
+console.log(places.length);
 
-// places.forEach((place) => {
-//   console.log(place.innerText.trim());
-//   place.addEventListener('click', function (e) {
+places.forEach((place) => {
+  console.log(place.innerText.trim());
+  place.addEventListener('click', function (e) {
 
-//     if (e.currentTarget.innerText === 'Islamabad') {
-//       window.location.href= './Islamabad/index.html';
+    if (e.currentTarget.innerText === 'Islamabad') {
+      window.location.href= './Islamabad/index.html';
       
-//     } else if (e.currentTarget.innerText === 'Karachi') {
+    } else if (e.currentTarget.innerText === 'Karachi') {
 
-//       window.location.href = './Karachi/index.html';
-//     }
-//   });
-// });
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var islamabadBtn = document.getElementById("islamabadBtn");
-  var karachiBtn = document.getElementById("karachiBtn");
-  
-  if(islamabadBtn) {
-      islamabadBtn.addEventListener("click", function() {
-          window.location.href = './Islamabad/index.html';
-      });
-  } else {
-      console.error("Islamabad button not found.");
-  }
-
-  if(karachiBtn) {
-      karachiBtn.addEventListener("click", function() {
-          window.location.href = './Karachi/index.html';
-      });
-  } else {
-      console.error("Karachi button not found.");
-  }
+      window.location.href = './Karachi/index.html';
+    }
+  });
 });
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   var islamabadBtn = document.getElementById("islamabadBtn");
+//   var karachiBtn = document.getElementById("karachiBtn");
+  
+//   if(islamabadBtn) {
+//       islamabadBtn.addEventListener("click", function() {
+//           window.location.href = './Islamabad/index.html';
+//       });
+//   } else {
+//       console.error("Islamabad button not found.");
+//   }
+
+//   if(karachiBtn) {
+//       karachiBtn.addEventListener("click", function() {
+//           window.location.href = './Karachi/index.html';
+//       });
+//   } else {
+//       console.error("Karachi button not found.");
+//   }
+// });
 

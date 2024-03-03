@@ -147,8 +147,8 @@ places.forEach((place) => {
   console.log(place.innerText.trim());
   place.addEventListener('click', function (e) {
 
-    if (e.currentTarget.innerText === 'IslamAbad') {
-      window.location.href="./IslamAbad/index.html"
+    if (e.currentTarget.innerText === 'Islamabad') {
+      window.location.href= './Islamabad/index.html';
       
     } else if (e.currentTarget.innerText === 'Karachi') {
 

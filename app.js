@@ -157,6 +157,16 @@ places.forEach((place) => {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  var islamabadBtn = document.getElementById("islamabadBtn");
+  islamabadBtn.addEventListener("click", function() {
+      window.location.href = './Islamabad/index.html';
+  });
+});
+
+
+
 // function redirectToIslamabad() {
 //    window.location.href = './Islamabad/index.html';
 // }

@@ -1,3 +1,19 @@
+function foodSearchHandler(){
+    const menuItems =  document.getElementById('menuItems');
+    const foodSearchBar = document.getElementById('foodSearchBar');
+    const inputVal = foodSearchBar.value;
+    if(inputVal == ''){
+
+        resTaurentRecipe()
+    }else{
+        menuItems.innerHTML = ''
+        resTaurentRecipe(inputVal)
+    }
+}
+
+
+
+
 
 const resTaurentRecipe = (items = 'cake') => {
     const promise = fetch(`https://forkify-api.herokuapp.com/api/v2/recipes?search= ${items} `);

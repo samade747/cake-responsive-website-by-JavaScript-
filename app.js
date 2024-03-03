@@ -149,7 +149,7 @@ places.forEach((place) => {
 
     if (e.currentTarget.innerText === 'Islamabad') {
 
-      window.location.href = './Islamabad/index.html';
+      window.location.href = './islamabad/index.html';
     } else if (e.currentTarget.innerText === 'Karachi') {
 
       window.location.href = './Karachi/index.html';

@@ -952,7 +952,7 @@ body{
     }
     .card{
         margin-left: 15px;
-        width: 22rem;
+        width: 2rem;
     }
 }
 @media (max-width: 400px){
@@ -967,7 +967,7 @@ body{
 @media (max-width: 380px){
     .card{
         margin-left: 15px;
-        width: 19rem;
+        width: 2rem;
     }
     .fa-user{
         display: flex;
@@ -977,10 +977,10 @@ body{
         margin-top: 150px;
     }
     #imgContain{
-        margin-top: 210px;
+        margin-top: 10px;
     }
     #logoPandahey{
-        width:50px;
+        width:10px;
     }
     #mobilePic{
         width: 250px;

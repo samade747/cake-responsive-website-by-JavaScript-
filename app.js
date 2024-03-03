@@ -166,16 +166,24 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  var islamabadBtn = document.getElementById("islamabadBtn");
+  var karachiBtn = document.getElementById("karachiBtn");
+  
+  if(islamabadBtn) {
+      islamabadBtn.addEventListener("click", function() {
+          window.location.href = './Islamabad/index.html';
+      });
+  } else {
+      console.error("Islamabad button not found.");
+  }
 
-// function redirectToIslamabad() {
-//    window.location.href = './Islamabad/index.html';
-// }
+  if(karachiBtn) {
+      karachiBtn.addEventListener("click", function() {
+          window.location.href = './Karachi/index.html';
+      });
+  } else {
+      console.error("Karachi button not found.");
+  }
+});
 
-// function khi() {  
-//   window.location.replace = "../Karachi/index.html";
-// }
-
-
-// function isl() {  
-//   window.location.replace = "../Islamabad/index.html";
-// }

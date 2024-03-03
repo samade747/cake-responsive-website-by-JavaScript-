@@ -157,6 +157,9 @@ places.forEach((place) => {
   });
 });
 
+function redirectToIslamabad() {
+   window.location.replace('./Islamabad/index.html');
+}
 
 // function khi() {  
 //   window.location.replace = "../Karachi/index.html";

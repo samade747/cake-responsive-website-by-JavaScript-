@@ -157,9 +157,9 @@ places.forEach((place) => {
   });
 });
 
-function redirectToIslamabad() {
-   window.location.href = './Islamabad/index.html';
-}
+// function redirectToIslamabad() {
+//    window.location.href = './Islamabad/index.html';
+// }
 
 // function khi() {  
 //   window.location.replace = "../Karachi/index.html";

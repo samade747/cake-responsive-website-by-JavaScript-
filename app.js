@@ -158,7 +158,7 @@ places.forEach((place) => {
 });
 
 function redirectToIslamabad() {
-   window.location.replace('./Islamabad/index.html');
+   window.location.href = './Islamabad/index.html';
 }
 
 // function khi() {  

@@ -158,12 +158,7 @@
 // });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  var islamabadBtn = document.getElementById("islamabadBtn");
-  islamabadBtn.addEventListener("click", function() {
-      window.location.href = './Islamabad/index.html';
-  });
-});
+
 
 
 document.addEventListener("DOMContentLoaded", function() {

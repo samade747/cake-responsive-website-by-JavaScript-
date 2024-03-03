@@ -141,9 +141,10 @@
 // })
 
 const places = document.querySelectorAll('.places');
-
+console.log(places.length);
 
 places.forEach((place) => {
+  console.log(place.innerText.trim());
   place.addEventListener('click', function (e) {
 
     if (e.currentTarget.innerText === 'Islamabad') {
